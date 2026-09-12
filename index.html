@@ -1,0 +1,637 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>Du Lịch Đồng Tháp - Khám Phá Vùng Đất Sen Hồng</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="du lịch Đồng Tháp, sen hồng, làng nổi Tân Lập, vườn quốc gia Tràm Chim, Gáo Giồng, Sa Đéc, Xẻo Quít"
+        name="keywords">
+    <meta
+        content="Khám phá Đồng Tháp - vùng đất sen hồng tuyệt đẹp với hệ sinh thái ngập nước độc đáo, làng nổi Tân Lập, vườn quốc gia Tràm Chim và hoa Sa Đéc rực rỡ."
+        name="description">
+
+    <!-- Favicon -->
+    <link href="img/favicon.ico" rel="icon">
+
+    <!-- Google Web Fonts -->
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Font Awesome -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
+
+    <!-- Customized Bootstrap Stylesheet -->
+    <link href="css/style.css" rel="stylesheet">
+
+    <!-- Style tùy chỉnh để các ô điểm đến có chiều cao bằng nhau -->
+    <style>
+        .destination-item {
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .destination-item img {
+            height: 250px;
+            /* Chiều cao ảnh cố định */
+            object-fit: cover;
+            width: 100%;
+        }
+
+        .destination-overlay {
+            flex-grow: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Topbar Start -->
+    <div class="container-fluid bg-light pt-3 d-none d-lg-block">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 text-center text-lg-left mb-2 mb-lg-0">
+                    <div class="d-inline-flex align-items-center">
+                        <p><i class="fa fa-envelope mr-2"></i>dulichdongthap@example.com</p>
+                        <p class="text-body px-3">|</p>
+                        <p><i class="fa fa-phone-alt mr-2"></i>0277 385 1234</p>
+                    </div>
+                </div>
+                <div class="col-lg-6 text-center text-lg-right">
+                    <div class="d-inline-flex align-items-center">
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-twitter"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a class="text-primary px-3" href="">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a class="text-primary pl-3" href="">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Topbar End -->
+
+
+    <!-- Navbar Start -->
+    <div class="container-fluid position-relative nav-bar p-0">
+        <div class="container-lg position-relative p-0 px-lg-3" style="z-index: 9;">
+            <nav class="navbar navbar-expand-lg bg-light navbar-light shadow-lg py-3 py-lg-0 pl-3 pl-lg-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="m-0 text-primary"><span class="text-dark">ĐỒNG THÁP</span> TOUR</h1>
+                </a>
+                <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#navbarCollapse">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-between px-3" id="navbarCollapse">
+                    <div class="navbar-nav ml-auto py-0">
+                        <a href="index.html" class="nav-item nav-link active">Trang Chủ</a>
+                        <a href="about.html" class="nav-item nav-link">Giới Thiệu</a>
+                        <a href="service.html" class="nav-item nav-link">Dịch Vụ</a>
+                        <div class="nav-item dropdown">
+                            <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Trang</a>
+                            <div class="dropdown-menu border-0 rounded-0 m-0">
+                                <a href="blog.html" class="dropdown-item">Tin Tức</a>
+                                <a href="destination.html" class="dropdown-item">Điểm Đến</a>
+                            </div>
+                        </div>
+                        <a href="contact.html" class="nav-item nav-link">Liên Hệ</a>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </div>
+    <!-- Navbar End -->
+
+
+    <!-- Carousel Start -->
+    <div class="container-fluid p-0">
+        <div id="header-carousel" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="w-100"
+                        src="https://i2.ex-cdn.com/crystalbay.com/files/content/2025/02/18/dong-sen-thap-muoi-1-1950.jpg"
+                        alt="Đồng sen Tháp Mười rộng lớn">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Du Lịch Đồng Tháp</h4>
+                            <h1 class="display-3 text-white mb-md-4">Khám Phá Vùng Đất Sen Hồng</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Đặt Tour Ngay</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="w-100"
+                        src="https://mia.vn/media/uploads/blog-du-lich/kham-pha-khu-bao-ton-sinh-thai-dong-thap-muoi-tien-giang-1651081852.jpg"
+                        alt="Sông nước sinh thái Đồng Tháp Mười">
+                    <div class="carousel-caption d-flex flex-column align-items-center justify-content-center">
+                        <div class="p-3" style="max-width: 900px;">
+                            <h4 class="text-white text-uppercase mb-md-3">Du Lịch Đồng Tháp</h4>
+                            <h1 class="display-3 text-white mb-md-4">Trải Nghiệm Thiên Nhiên Tuyệt Đẹp</h1>
+                            <a href="" class="btn btn-primary py-md-3 px-md-5 mt-2">Đặt Tour Ngay</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#header-carousel" data-slide="prev">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-prev-icon mb-n2"></span>
+                </div>
+            </a>
+            <a class="carousel-control-next" href="#header-carousel" data-slide="next">
+                <div class="btn btn-dark" style="width: 45px; height: 45px;">
+                    <span class="carousel-control-next-icon mb-n2"></span>
+                </div>
+            </a>
+        </div>
+    </div>
+    <!-- Carousel End -->
+
+
+    <!-- Booking Start -->
+    <div class="container-fluid booking mt-5 pb-5">
+        <div class="container pb-5">
+            <div class="bg-light shadow" style="padding: 30px;">
+                <div class="row align-items-center" style="min-height: 60px;">
+                    <div class="col-md-10">
+                        <div class="row">
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Điểm Đến</option>
+                                        <option value="1">Vườn Quốc Gia Tràm Chim</option>
+                                        <option value="2">Làng Nổi Tân Lập</option>
+                                        <option value="3">Khu Du Lịch Gáo Giồng</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <input type="text" class="form-control p-4" placeholder="Ngày Khởi Hành" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <input type="text" class="form-control p-4" placeholder="Ngày Về" />
+                                </div>
+                            </div>
+                            <div class="col-md-3">
+                                <div class="mb-3 mb-md-0">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Thời Gian</option>
+                                        <option value="1">1 Ngày</option>
+                                        <option value="2">2 Ngày 1 Đêm</option>
+                                        <option value="3">3 Ngày 2 Đêm</option>
+                                    </select>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <button class="btn btn-primary btn-block" type="submit"
+                            style="height: 47px; margin-top: -2px;">Tìm Tour</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Booking End -->
+
+
+    <!-- About Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5">
+            <div class="row">
+                <div class="col-lg-6" style="min-height: 500px;">
+                    <div class="position-relative h-100">
+                        <img class="position-absolute w-100 h-100"
+                            src="https://www.bonboncar.vn/blog/content/images/2025/08/TA_SEO_BAI-1_03.jpg"
+                            style="object-fit: cover;" alt="Rừng tràm Tràm Chim">
+                    </div>
+                </div>
+                <div class="col-lg-6 pt-5 pb-lg-5">
+                    <div class="about-text bg-white p-4 p-lg-5 my-lg-5">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Giới Thiệu</h6>
+                        <h1 class="mb-3">Đồng Tháp - Vùng Đất Sen Hồng Tuyệt Đẹp</h1>
+                        <p>Đồng Tháp là tỉnh thuộc vùng Đồng bằng sông Cửu Long, nổi tiếng với hình ảnh hoa sen hồng rực
+                            rỡ và hệ sinh thái ngập nước phong phú. Nơi đây sở hữu Vườn quốc gia Tràm Chim - khu Ramsar
+                            của thế giới, Làng nổi Tân Lập, Khu du lịch sinh thái Gáo Giồng, Cụm di tích Xẻo Quít và
+                            thành phố Sa Đéc - kinh đô hoa kiểng miền Tây.</p>
+                        <div class="row mb-4">
+                            <div class="col-6">
+                                <img class="img-fluid"
+                                    src="https://i2.ex-cdn.com/crystalbay.com/files/content/2025/02/18/dong-sen-thap-muoi-1-1950.jpg"
+                                    alt="Đồng sen Tháp Mười">
+                            </div>
+                            <div class="col-6">
+                                <img class="img-fluid"
+                                    src="https://res.klook.com/image/upload/q_85/c_fill,w_750/v1751785946/oqlrjvwmxc70n4fyfqjy.jpg"
+                                    alt="Làng hoa Sa Đéc rực rỡ">
+                            </div>
+                        </div>
+                        <a href="" class="btn btn-primary mt-1">Đặt Tour Ngay</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- About End -->
+
+
+    <!-- Feature Start -->
+    <div class="container-fluid pb-5">
+        <div class="container pb-5">
+            <div class="row">
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+                            style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-money-check-alt text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Giá Cạnh Tranh</h5>
+                            <p class="m-0">Tour chất lượng cao với mức giá hợp lý, phù hợp mọi đối tượng du khách</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+                            style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-award text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Dịch Vụ Tốt Nhất</h5>
+                            <p class="m-0">Đội ngũ hướng dẫn viên nhiệt tình, xe đưa đón hiện đại, an toàn</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <div class="d-flex mb-4 mb-lg-0">
+                        <div class="d-flex flex-shrink-0 align-items-center justify-content-center bg-primary mr-3"
+                            style="height: 100px; width: 100px;">
+                            <i class="fa fa-2x fa-globe text-white"></i>
+                        </div>
+                        <div class="d-flex flex-column">
+                            <h5 class="">Khám Phá Toàn Diện</h5>
+                            <p class="m-0">Hành trình đưa bạn đến những điểm du lịch nổi bật nhất của Đồng Tháp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Feature End -->
+
+
+    <!-- Destination Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Điểm Đến</h6>
+                <h1>Khám Phá Các Địa Danh Nổi Tiếng</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid"
+                            src="https://upload.wikimedia.org/wikipedia/commons/f/fa/%C4%90%E1%BB%93ng_c%E1%BB%8F_v%C3%A0_chim_n%C6%B0%E1%BB%9Bc.jpg"
+                            alt="Vườn Quốc Gia Tràm Chim">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Vườn Quốc Gia Tràm Chim</h5>
+                            <span>Hệ sinh thái ngập nước Ramsar</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid"
+                            src="https://cdn.tcdulichtphcm.vn/upload/2-2021/images/2021-06-05/1622905404-tanlap-7.jpg"
+                            alt="Làng Nổi Tân Lập">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Làng Nổi Tân Lập</h5>
+                            <span>Rừng tràm nguyên sinh huyền bí</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid"
+                            src="https://innotour.vn/image/catalog/tour-trong-nuoc/dong-thap-tram-chim/chi-tiet-tour/khu-du-lich-gao-giong.jpg"
+                            alt="Khu Du Lịch Gáo Giồng">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Khu Du Lịch Gáo Giồng</h5>
+                            <span>Vườn chim lớn nhất Đồng Tháp Mười</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid"
+                            src="https://res.klook.com/image/upload/q_85/c_fill,w_750/v1751785946/oqlrjvwmxc70n4fyfqjy.jpg"
+                            alt="Làng Hoa Sa Đéc">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Thành Phố Sa Đéc</h5>
+                            <span>Làng hoa kiểng nổi tiếng miền Tây</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid"
+                            src="https://mia.vn/media/uploads/blog-du-lich/xeo-quyt-o-dau-1704209777.jpg"
+                            alt="Di Tích Xẻo Quít">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Cụm Di Tích Xẻo Quít</h5>
+                            <span>Căn cứ cách mạng lịch sử</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="destination-item position-relative overflow-hidden mb-2">
+                        <img class="img-fluid"
+                            src="https://cdn.tcdulichtphcm.vn/upload/3-2022/images/2022-07-27/image2-1658879255-674-width1214height838.jpg"
+                            alt="Nhà Cổ Huỳnh Thủy Lê">
+                        <a class="destination-overlay text-white text-decoration-none" href="">
+                            <h5 class="text-white">Cao Lãnh</h5>
+                            <span>Thành phố trung tâm vùng Đồng Tháp Mười</span>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Destination Start -->
+
+
+    <!-- Service Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Dịch Vụ</h6>
+                <h1>Dịch Vụ Du Lịch Đồng Tháp</h1>
+            </div>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-route mx-auto mb-4"></i>
+                        <h5 class="mb-2">Hướng Dẫn Viên</h5>
+                        <p class="m-0">Đội ngũ hướng dẫn viên am hiểu địa phương, nhiệt tình và chu đáo</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-ticket-alt mx-auto mb-4"></i>
+                        <h5 class="mb-2">Đặt Tour Trọn Gói</h5>
+                        <p class="m-0">Tour ghép đoàn hoặc riêng theo yêu cầu, giá tốt nhất</p>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="service-item bg-white text-center mb-2 py-5 px-4">
+                        <i class="fa fa-2x fa-hotel mx-auto mb-4"></i>
+                        <h5 class="mb-2">Đặt Khách Sạn</h5>
+                        <p class="m-0">Hỗ trợ đặt phòng khách sạn, homestay, nhà nghỉ tại Đồng Tháp</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Service End -->
+
+
+    <!-- Registration Start -->
+    <div class="container-fluid bg-registration py-5" style="margin: 90px 0;">
+        <div class="container py-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 mb-5 mb-lg-0">
+                    <div class="mb-4">
+                        <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Ưu Đãi Đặc Biệt</h6>
+                        <h1 class="text-white"><span class="text-primary">20% OFF</span> Tour Mùa Sen Hồng</h1>
+                    </div>
+                    <p class="text-white">Thưởng thức vẻ đẹp rực rỡ của những cánh đồng sen bạt ngàn, trải nghiệm chèo
+                        thuyền hái sen, chụp ảnh với sen và thưởng thức các món ăn từ sen đặc sản Đồng Tháp.</p>
+                    <ul class="list-inline text-white m-0">
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Tham quan các điểm du lịch nổi bật
+                        </li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Ăn đặc sản địa phương</li>
+                        <li class="py-2"><i class="fa fa-check text-primary mr-3"></i>Trải nghiệm văn hóa sông nước miền
+                            Tây</li>
+                    </ul>
+                </div>
+                <div class="col-lg-5">
+                    <div class="card border-0">
+                        <div class="card-header bg-primary text-center p-4">
+                            <h1 class="text-white m-0">Đăng Ký Nhận Ưu Đãi</h1>
+                        </div>
+                        <div class="card-body rounded-bottom bg-white p-5">
+                            <form>
+                                <div class="form-group">
+                                    <input type="text" class="form-control p-4" placeholder="Họ và tên"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <input type="email" class="form-control p-4" placeholder="Email của bạn"
+                                        required="required" />
+                                </div>
+                                <div class="form-group">
+                                    <select class="custom-select px-4" style="height: 47px;">
+                                        <option selected>Chọn điểm đến</option>
+                                        <option value="1">Vườn Quốc Gia Tràm Chim</option>
+                                        <option value="2">Làng Nổi Tân Lập</option>
+                                        <option value="3">Sa Đéc - Làng Hoa</option>
+                                    </select>
+                                </div>
+                                <div>
+                                    <button class="btn btn-primary btn-block py-3" type="submit">Đăng Ký Ngay</button>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Registration End -->
+
+
+    <!-- Blog Start -->
+    <div class="container-fluid py-5">
+        <div class="container pt-5 pb-3">
+            <div class="text-center mb-3 pb-3">
+                <h6 class="text-primary text-uppercase" style="letter-spacing: 5px;">Tin Tức</h6>
+                <h1>Cẩm Nang Du Lịch Đồng Tháp</h1>
+            </div>
+            <div class="row pb-3">
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100"
+                                src="https://cdn3.ivivu.com/2016/04/dep-ngo-ngang-dong-sen-thap-muoi-ivivu-1.jpg"
+                                alt="Mùa sen hồng Đồng Tháp">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">15</h6>
+                                <small class="text-white text-uppercase">Th6</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Du Lịch Sinh
+                                    Thái</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="">Khám phá vẻ đẹp hoang sơ của Vườn quốc gia
+                                Tràm Chim</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100"
+                                src="https://danviet.ex-cdn.com/files/f1/296231569849192448/2024/5/18/1715993994-z5450742164376601e986432a6c2c642f026a9f507d213-1716026554997-17160265564262099691722.jpg"
+                                alt="Ẩm thực đặc sản từ sen">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">20</h6>
+                                <small class="text-white text-uppercase">Th6</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Ẩm Thực</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="">Những món ngon không thể bỏ qua khi đến Đồng
+                                Tháp</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4 pb-2">
+                    <div class="blog-item">
+                        <div class="position-relative">
+                            <img class="img-fluid w-100"
+                                src="http://vietpowertravel.com.vn/blog/wp-content/uploads/2015/12/ca-loc-nuong-trui-cuon-la-sen-non2.jpg"
+                                alt="Cá lóc nướng cuốn lá sen non">
+                            <div class="blog-date">
+                                <h6 class="font-weight-bold mb-n1">25</h6>
+                                <small class="text-white text-uppercase">Th6</small>
+                            </div>
+                        </div>
+                        <div class="bg-white p-4">
+                            <div class="d-flex mb-2">
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Admin</a>
+                                <span class="text-primary px-2">|</span>
+                                <a class="text-primary text-uppercase text-decoration-none" href="">Làng Hoa</a>
+                            </div>
+                            <a class="h5 m-0 text-decoration-none" href="">Làng hoa Sa Đéc rực rỡ đón Tết Nguyên Đán</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Blog End -->
+
+
+    <!-- Footer Start -->
+    <div class="container-fluid bg-dark text-white-50 py-5 px-sm-3 px-lg-5" style="margin-top: 90px;">
+        <div class="row pt-5">
+            <div class="col-lg-3 col-md-6 mb-5">
+                <a href="" class="navbar-brand">
+                    <h1 class="text-primary"><span class="text-white">ĐỒNG THÁP</span> TOUR</h1>
+                </a>
+                <p>Đồng Tháp - vùng đất sen hồng xinh đẹp, nơi lưu giữ vẻ đẹp thiên nhiên sông nước miền Tây và những
+                    giá trị lịch sử cách mạng hào hùng.</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Theo Dõi Chúng Tôi</h6>
+                <div class="d-flex justify-content-start">
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-twitter"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a class="btn btn-outline-primary btn-square mr-2" href="#"><i class="fab fa-linkedin-in"></i></a>
+                    <a class="btn btn-outline-primary btn-square" href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Dịch Vụ Của Chúng Tôi</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Giới Thiệu</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Điểm Đến</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Dịch Vụ</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Tour Trọn Gói</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Hướng Dẫn Viên</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Đánh Giá</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Tin Tức</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Liên Kết Hữu Ích</h5>
+                <div class="d-flex flex-column justify-content-start">
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Giới Thiệu</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Điểm Đến</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Dịch Vụ</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Tour Trọn Gói</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Hướng Dẫn Viên</a>
+                    <a class="text-white-50 mb-2" href="#"><i class="fa fa-angle-right mr-2"></i>Đánh Giá</a>
+                    <a class="text-white-50" href="#"><i class="fa fa-angle-right mr-2"></i>Tin Tức</a>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-5">
+                <h5 class="text-white text-uppercase mb-4" style="letter-spacing: 5px;">Liên Hệ</h5>
+                <p><i class="fa fa-map-marker-alt mr-2"></i>Cao Lãnh, Đồng Tháp, Việt Nam</p>
+                <p><i class="fa fa-phone-alt mr-2"></i>0277 385 1234</p>
+                <p><i class="fa fa-envelope mr-2"></i>dulichdongthap@example.com</p>
+                <h6 class="text-white text-uppercase mt-4 mb-3" style="letter-spacing: 5px;">Đăng Ký Nhận Tin</h6>
+                <div class="w-100">
+                    <div class="input-group">
+                        <input type="text" class="form-control border-light" style="padding: 25px;"
+                            placeholder="Email của bạn">
+                        <div class="input-group-append">
+                            <button class="btn btn-primary px-3">Đăng Ký</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="container-fluid bg-dark text-white border-top py-4 px-sm-3 px-md-5"
+        style="border-color: rgba(256, 256, 256, .1) !important;">
+        <div class="row">
+            <div class="col-lg-6 text-center text-md-left mb-3 mb-md-0">
+                <p class="m-0 text-white-50">Copyright &copy; <a href="#">Đồng Tháp Tour</a>. All Rights Reserved.</a>
+                </p>
+            </div>
+            <div class="col-lg-6 text-center text-md-right">
+                <p class="m-0 text-white-50">Designed by <a href="https://htmlcodex.com">HTML Codex</a></p>
+            </div>
+        </div>
+    </div>
+    <!-- Footer End -->
+
+
+    <!-- Back to Top -->
+    <a href="#" class="btn btn-lg btn-primary btn-lg-square back-to-top"><i class="fa fa-angle-double-up"></i></a>
+
+
+    <!-- JavaScript Libraries -->
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+    <script src="lib/easing/easing.min.js"></script>
+
+    <!-- Template Javascript -->
+    <script src="js/main.js"></script>
+</body>
+
+</html>
